@@ -44,7 +44,7 @@ class AESCipher:
 #
 #CHANGE THE FOLLOWING THREE LINES ONLY! 
 message = 'ezzmainpassworD123//' # <-- This ur secret message 
-keys = generate_random_keys(10, 32) # <-- This generating you a list of keys 
+keys = generate_random_keys(10, 32) # <-- This generating you a list of keys first number for the size of the list and second number is for size of key which should be 32, 24 or 16 
 i = 5 # <-- This the key you choose to use index number in the list 
 #
 AESCIPHER1 = AESCipher(keys[i]) # <-- This the cipher being created DONT CHANGE 
