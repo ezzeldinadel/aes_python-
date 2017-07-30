@@ -43,19 +43,23 @@ class AESCipher:
 ## main program 
 #
 #CHANGE THE FOLLOWING THREE LINES ONLY! 
-message = 'ezzmainpassworD123//' # <-- This ur secret message 
+message = 'a7aneeka7aneeka7aneeka7aneeka7aneek' # <-- This ur secret message 
 keys = generate_random_keys(10, 32) # <-- This generating you a list of keys first number for the size of the list and second number is for size of key which should be 32, 24 or 16 
 i = 5 # <-- This the key you choose to use index number in the list 
 #
 AESCIPHER1 = AESCipher(keys[i]) # <-- This the cipher being created DONT CHANGE 
 encrypted_message = AESCIPHER1.encrypt(message)# <-- This the message being encrypted DONT CHANGE 
 decrypted_message =AESCIPHER1.decrypt(encrypted_message)# <-- This the message being decrypted DONT CHANGE 
-#
-#display what we have 
-print message
-print 
-print keys[i] 
-print 
-print encrypted_message
-print 
-print decrypted_message
+
+if ( message == decrypted_message ):
+    print "original and decrypted match"
+    #
+    #display what we have 
+    print
+    print message
+    print 
+    print keys[i] 
+    print 
+    print encrypted_message
+    print 
+    print decrypted_message
